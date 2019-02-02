@@ -103,7 +103,7 @@
 <meta property="og:site_name" content="人工智障">
 <meta property="og:description" content="第1章 好的推荐系统1.1 什么是推荐系统1.2 个性化推荐系统的应用 1.2.1 电子商务Amazon，基于物品的推荐 1.2.2 电影和视频网站Netflix 基于物品的推荐Youtube, Hulu 1.2.3 个性化音乐网络电台Pandora，基于内容Last.fm，基于用户，协同过滤？ 1.2.4 社交网络Clicker 1.2.5 个性化阅读Google ReaderZiteDigg">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-02T09:05:59.625Z">
+<meta property="og:updated_time" content="2019-02-02T09:07:16.697Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="helloworld">
 <meta name="twitter:description" content="第1章 好的推荐系统1.1 什么是推荐系统1.2 个性化推荐系统的应用 1.2.1 电子商务Amazon，基于物品的推荐 1.2.2 电影和视频网站Netflix 基于物品的推荐Youtube, Hulu 1.2.3 个性化音乐网络电台Pandora，基于内容Last.fm，基于用户，协同过滤？ 1.2.4 社交网络Clicker 1.2.5 个性化阅读Google ReaderZiteDigg">
@@ -331,7 +331,7 @@
                 
               
 
-              <time title="Created: 2019-02-02 15:36:16 / Modified: 17:05:59" itemprop="dateCreated datePublished" datetime="2019-02-02T15:36:16+08:00">2019-02-02</time>
+              <time title="Created: 2019-02-02 15:36:16 / Modified: 17:07:16" itemprop="dateCreated datePublished" datetime="2019-02-02T15:36:16+08:00">2019-02-02</time>
             
 
             
@@ -391,8 +391,10 @@
 </ol>
 <ul>
 <li>评分预测<br>RMSE：均方根误差<br>MAE：平均绝对误差<script type="math/tex; mode=display">RMSE=\frac{\sqrt{\textstyle \sum_{n,i\in T}({r_{ui}-\hat{r}_{ui}})^2}}{|T|}</script>【注】此处T的含义应当是指n,i构成的向量？即分母为T的模，$\sqrt{(n^2+i^2)}$<script type="math/tex; mode=display">MAE=\frac{\sum_{u,i \in T}|{r_{ui}-\hat{r}_{ui}}|}{|T|}</script>RMSE加大了对预测不准的惩罚；如变量基于指数，则对预测结果取整会降低MAE的误差</li>
-<li>TopN推荐<br>R(u)：训练集<br>T(u)：测试集<br>$Recall=\frac{\sum<em>{u \in U}{|R(u)\cap T(u)|}}{\sum</em>{u \in U}{|T(u)|}}$<br>$Precision=\frac{\sum<em>{u \in U}{|R(u)\cap T(u)|}}{\sum</em>{u \in U}{|R(u)|}}$</li>
+<li>TopN推荐<br>R(u)：训练集<br>T(u)：测试集</li>
 </ul>
+<p>$Recall=\frac{\sum<em>{u \in U}{|R(u)\cap T(u)|}}{\sum</em>{u \in U}{|T(u)|}}$</p>
+<p>$Precision=\frac{\sum<em>{u \in U}{|R(u)\cap T(u)|}}{\sum</em>{u \in U}{|R(u)|}}$</p>
 <ol>
 <li>覆盖率<br>$Coverage = \frac{\bigcup_{u \in U}{R(u)}}{|I|}$<br>注：In set theory, if B is a set, $\bigcup{B}$ is the union of all elements(<em>) of B.<br>覆盖率不足以说明系统<em>*发掘长尾的能力</em></em>，故有：</li>
 </ol>
